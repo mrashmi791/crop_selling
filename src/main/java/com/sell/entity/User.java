@@ -25,7 +25,29 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    public User() {
+    @Column(name = "address")
+    private String address;
+    
+    @Column(name = "mobile")
+    private String mobile;
+    
+    public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public User() {
 
     }
 

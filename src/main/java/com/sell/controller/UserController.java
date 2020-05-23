@@ -19,16 +19,21 @@ public class UserController {
 
     @GetMapping("/list")
     public String listCustomers(Model theModel) {
-        List < User > theUser = userService.getUser();
+        List < User> theUser = userService.getUser();
         theModel.addAttribute("users", theUser);
         return "list-customers";
     }
 
+    @GetMapping("/")
+    public String loadIndex() {
+        return "home";
+    }
+    
     @GetMapping("/showForm")
     public String showFormForAdd(Model theModel) {
         User theUser = new User();
-        theModel.addAttribute("customer", theUser);
-        return "customer-form";
+        theModel.addAttribute("user", theUser);
+        return "user-form";
     }
 //
 //    @PostMapping("/saveCustomer")

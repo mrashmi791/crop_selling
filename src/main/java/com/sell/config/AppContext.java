@@ -27,7 +27,7 @@ public class AppContext {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan(new String[] {
-            "net.javaguides.springmvc.entity"
+            "com.sell.entity"
         });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
