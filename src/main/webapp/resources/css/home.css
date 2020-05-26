@@ -1,4 +1,49 @@
 
-.search-item-home {
-	margin: 10px;
+
+.bg-dark {
+	position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.nav-link  {
+	color: #FFF !important;
+}
+
+
+
+.carousel-item > img {
+	max-height: 500px !important;
+}
+
+.row {
+	margin: 0px !important;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top-about {
+	text-align: center;;
+}
+
+.about-wel {
+    text-align: left;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.sd-img > img {
+	max-width: 500px;
+    max-height: 500px;
+}
+
+.sb > a{
+	padding-right: 20px;
 }
