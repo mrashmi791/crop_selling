@@ -16,14 +16,14 @@
 <body>
 	<div class="container">
 		<div class="col-md-6"></div>
-		
-			<div class="col-md-8">
+
+		<div class="col-md-8">
 			<h2 class="text-center">Registration</h2>
 			<div class="panel panel-info">
-				
+
 				<div class="panel-body">
-					<form:form action="" cssClass="form-horizontal" method="post"
-						modelAttribute="user">
+					<form:form action="saveUser" cssClass="form-horizontal"
+						method="post" modelAttribute="user">
 
 						<!-- need to associate this data with customer id -->
 						<form:hidden path="id" />
@@ -49,20 +49,37 @@
 								<form:input path="email" cssClass="form-control" />
 							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<label for="address" class="col-md-4 control-label">Address</label>
 							<div class="col-md-6">
 								<form:input path="address" cssClass="form-control" />
 							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<label for="mobile" class="col-md-4 control-label">Mobile</label>
 							<div class="col-md-6">
 								<form:input path="mobile" cssClass="form-control" />
 							</div>
 						</div>
+
+						<div class="form-group">
+							<label for="password" class="col-md-4 control-label">Password
+							</label>
+							<div class="col-md-6">
+								<form:input path="password" cssClass="form-control" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="cnf-password" class="col-md-4 control-label">Confirm
+								Password</label>
+							<div class="col-md-6">
+								<form:input path="password" cssClass="form-control" />
+							</div>
+						</div>
+
 
 						<div class="form-group">
 							<!-- Button -->
@@ -75,8 +92,8 @@
 				</div>
 			</div>
 		</div>
-		</div>
-		
+	</div>
+
 
 </body>
 </html>

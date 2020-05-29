@@ -10,7 +10,7 @@ public interface UserDAO {
 
     public List < User > getUser();
 
-//    public void saveCustomer(User theUser);
+    public void saveUser(User theUser);
 //
 //    public User getCustomer(int theId);
 //

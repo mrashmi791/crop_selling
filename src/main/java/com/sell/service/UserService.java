@@ -9,7 +9,7 @@ public interface UserService {
 
     public List < User > getUser();
 
-//    public void saveCustomer(User theUser);
+    public void saveUser(User theUser);
 //
 //    public Customer getCustomer(int theId);
 //

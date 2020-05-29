@@ -1,0 +1,24 @@
+.content {
+	text-align: center !important;
+	margin-top: 115px;
+}
+
+.h2-info {
+	color: darkgreen;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+h2 {
+	
+}
+
+.box {
+	font-size: 50px;
+	color: green;
+}
+
+.button {
+	text-align: center !important;
+	padding-top: 20px;
+}

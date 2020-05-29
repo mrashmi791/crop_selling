@@ -12,18 +12,17 @@ import com.sell.entity.User;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserDAO customerDAO;
+    private UserDAO userDAO;
 
     @Transactional
     public List < User > getUser() {
-        return customerDAO.getUser();
+        return userDAO.getUser();
     }
 
-//    @Override
-//    @Transactional
-//    public void saveCustomer(User theUser) {
-//        customerDAO.saveCustomer(theUser);
-//    }
+    @Transactional
+    public void saveUser(User theUser) {
+        userDAO.saveUser(theUser);
+    }
 
 //    @Override
 //    @Transactional

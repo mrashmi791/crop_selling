@@ -29,5 +29,10 @@ public class UserDAOImpl implements UserDAO {
         Query query = session.createQuery(cq);
         return query.getResultList();
     }
+
+    public void saveUser(User theUser) {
+        Session currentSession = sessionFactory.getCurrentSession();
+        currentSession.saveOrUpdate(theUser);
+    }
 }
 //
